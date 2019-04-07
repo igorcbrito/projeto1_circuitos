@@ -1,0 +1,16 @@
+|multiplexador
+x0 => y.IN1
+x1 => y.IN1
+x2 => y.IN1
+x3 => y.IN1
+s1 => y.IN0
+s1 => y.IN0
+s1 => y.IN0
+s1 => y.IN0
+s0 => y.IN1
+s0 => y.IN1
+s0 => y.IN1
+s0 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
