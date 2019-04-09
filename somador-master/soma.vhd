@@ -20,6 +20,15 @@ component somador is
 		);
 end component;
 
+component multiplexador is 
+port(
+		entrada_multi: in std_logic_vector(5 downto 0);
+		
+		saida_multi: out std_logic
+
+	);
+end component;
+
 component conversor is
 port(
 		  I      : in std_logic_vector(3 downto 0);
@@ -35,7 +44,7 @@ begin
 	S1 : somador port map(carry(0), A(1), B(1), carry(1), S(1));
 	S2 : somador port map(carry(1), A(2), B(2), carry(2), S(2));
 	Co <= carry(2);
-	S(3) <= '0';
+	S(3) <= carry(2);
 	conv : conversor port map(S, Yleds);
 end archSoma;
 	
