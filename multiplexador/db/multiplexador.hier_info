@@ -1,16 +1,11 @@
-|multiplexador
-x0 => y.IN1
-x1 => y.IN1
-x2 => y.IN1
-x3 => y.IN1
-s1 => y.IN0
-s1 => y.IN0
-s1 => y.IN0
-s1 => y.IN0
-s0 => y.IN1
-s0 => y.IN1
-s0 => y.IN1
-s0 => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
+|inversor
+A[0] => y[0].DATAIN
+A[1] => y[1].DATAIN
+A[2] => y[2].DATAIN
+A[3] => y[3].DATAIN
+y[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
