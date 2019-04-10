@@ -14,5 +14,3 @@ begin
 	S <= Ci xor (A xor B);
 	Co <= (Ci and (A xor B)) or (A and B);
 end archSomador;
-	
-	
