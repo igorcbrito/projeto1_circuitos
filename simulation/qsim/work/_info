@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\igorc\Desktop\projeto1_circuitos\simulation\qsim
+vmenorque
+Z1 I1@YFI6zee82_J1XN:R]Mm2
+Z2 VIdz?WzG5]oY0SbklgYiWf0
+Z3 dC:\Users\igorc\Desktop\projeto1_circuitos\simulation\qsim
+Z4 w1554923855
+Z5 8multiplexador.vo
+Z6 Fmultiplexador.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|multiplexador.vo|
+Z9 o-work work -O0
+Z10 !s100 mHc_k[4>Tzj<;Xe:JMA`z3
+Z11 !s108 1554923858.086000
+Z12 !s107 multiplexador.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vmenorque_vlg_check_tst
+Z13 !s100 0Y1@e2`55z_4]zA<9?=BP3
+Z14 IQ>@VZL:6RL9MPhT=6na`33
+Z15 VjX<L3B]Q^^FobL@_7zVE20
+R3
+Z16 w1554923854
+Z17 8multiplexador.vt
+Z18 Fmultiplexador.vt
+L0 59
+R7
+r1
+31
+Z19 !s108 1554923858.618000
+Z20 !s107 multiplexador.vt|
+Z21 !s90 -work|work|multiplexador.vt|
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vmenorque_vlg_sample_tst
+Z22 !s100 Hmj8CXYYlanFKjFVf:=le2
+Z23 Imd75:`981MA`2E@3Q=WS63
+Z24 VJZN0`LICMLPOdni]44nWG0
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+31
+R19
+R20
+R21
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vmenorque_vlg_vec_tst
+Z25 !s100 `g=d[iZzm]JUnSfQWN6_L3
+Z26 IK=N[>z`=JOI9_3LWDP4kV3
+Z27 V8<=`YP@6fWoTMFJ`g`_6@2
+R3
+R16
+R17
+R18
+Z28 L0 154
+R7
+r1
+31
+R19
+R20
+R21
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vmultiplexador
+Z29 !s100 cFGVH2Fcl@MYzMnT9Z0Nn2
+Z30 I;]IM2LWoWLAZho][?jcN_1
+Z31 VA@LK2h<^Gld@iXk6dC8j80
+R3
+Z32 w1554944595
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+!i10b 1
+!s85 0
+Z33 !s108 1554944598.105000
+R12
+!s101 -O0
+vmultiplexador_vlg_check_tst
+!i10b 1
+Z34 !s100 65O??<ZAAk2>mPHz0mAO=0
+Z35 I0VZ6`VzLW4[]galL>9Gj92
+Z36 V=2D@fBU=Ml^[Kbf^MEMbS3
+R3
+Z37 w1554944594
+R17
+R18
+L0 69
+R7
+r1
+!s85 0
+31
+Z38 !s108 1554944598.543000
+Z39 !s107 multiplexador.vt|
+R21
+!s101 -O0
+R9
+vmultiplexador_vlg_sample_tst
+!i10b 1
+Z40 !s100 RjTkbomjiGehQ@U2gX[MO3
+Z41 Ie]0PE8;e`7G5_6cjP1>2Q3
+Z42 Vl]_iHFm^Fb;Fik17CEQ2_2
+R3
+R37
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R38
+R39
+R21
+!s101 -O0
+R9
+vmultiplexador_vlg_vec_tst
+!i10b 1
+Z43 !s100 RmKn^`D[1O^34>NgIRzeo0
+Z44 I_Q`J9^oPI>V<R6zi>5^O50
+Z45 VW0?z^n0nDYkc7?1?=:8Ui1
+R3
+R37
+R17
+R18
+Z46 L0 164
+R7
+r1
+!s85 0
+31
+R38
+R39
+R21
+!s101 -O0
+R9

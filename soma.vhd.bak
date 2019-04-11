@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity soma is
+port
+	(
+		A, B : in std_logic_vector(2 downto 0);
+		Yleds    : out std_logic_vector(6 downto 0);
+		Co   : out std_logic
+	);
+end soma;
+
+architecture archSoma of soma is
+
+component somador is
+	port
+		(
+			Ci, A, B : in std_logic;
+			Co, S    : out std_logic
+		);
+end component;
+
+component conversor is
+port(
+		  I      : in std_logic_vector(3 downto 0);
+		  Y		: out std_logic_vector(6 downto 0)
+	);
+end component;
+
+signal carry : std_logic_vector(2 downto 0);
