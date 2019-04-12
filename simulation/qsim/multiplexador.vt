@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/10/2019 22:03:13"
+// Generated on "04/11/2019 14:48:14"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    multiplexador
 // 
@@ -32,8 +32,6 @@ module multiplexador_vlg_sample_tst(
 	s2,
 	x0,
 	x1,
-	x2,
-	x3,
 	sampler_tx
 );
 input  s0;
@@ -41,13 +39,11 @@ input  s1;
 input  s2;
 input  x0;
 input  x1;
-input  x2;
-input  x3;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(s0 or s1 or s2 or x0 or x1 or x2 or x3)
+always @(s0 or s1 or s2 or x0 or x1)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -169,8 +165,6 @@ reg s1;
 reg s2;
 reg x0;
 reg x1;
-reg x2;
-reg x3;
 // wires                                               
 wire y;
 
@@ -184,10 +178,45 @@ multiplexador i1 (
 	.s2(s2),
 	.x0(x0),
 	.x1(x1),
-	.x2(x2),
-	.x3(x3),
 	.y(y)
 );
+
+// s0
+initial
+begin
+	s0 = 1'b0;
+	s0 = #200000 1'b1;
+	s0 = #600000 1'b0;
+end 
+
+// s1
+initial
+begin
+	s1 = 1'b1;
+	s1 = #200000 1'b0;
+end 
+
+// s2
+initial
+begin
+	s2 = 1'b1;
+	s2 = #200000 1'b0;
+	s2 = #400000 1'b1;
+end 
+
+// x0
+initial
+begin
+	x0 = 1'b1;
+end 
+
+// x1
+initial
+begin
+	x1 = 1'b1;
+	x1 = #600000 1'b0;
+	x1 = #200000 1'b1;
+end 
 
 multiplexador_vlg_sample_tst tb_sample (
 	.s0(s0),
@@ -195,8 +224,6 @@ multiplexador_vlg_sample_tst tb_sample (
 	.s2(s2),
 	.x0(x0),
 	.x1(x1),
-	.x2(x2),
-	.x3(x3),
 	.sampler_tx(sampler)
 );
 

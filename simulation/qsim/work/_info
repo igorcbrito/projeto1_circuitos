@@ -80,11 +80,10 @@ R9
 !s85 0
 !s101 -O0
 vmultiplexador
-Z29 !s100 cFGVH2Fcl@MYzMnT9Z0Nn2
-Z30 I;]IM2LWoWLAZho][?jcN_1
-Z31 VA@LK2h<^Gld@iXk6dC8j80
-R3
-Z32 w1554944595
+Z29 I?KDLiaS6oFa?cP6OT1UWL2
+Z30 Vi;iH[RELH2Tk3bgS^UO9h3
+Z31 dC:\Users\igorc\Documents\GitHub\projeto1_circuitos\simulation\qsim
+Z32 w1555004896
 R5
 R6
 L0 31
@@ -94,36 +93,37 @@ r1
 R8
 R9
 !i10b 1
+Z33 !s100 8k[B@e<Ob16BO]ROJXVFG0
 !s85 0
-Z33 !s108 1554944598.105000
+Z34 !s108 1555004901.147000
 R12
 !s101 -O0
 vmultiplexador_vlg_check_tst
 !i10b 1
-Z34 !s100 65O??<ZAAk2>mPHz0mAO=0
-Z35 I0VZ6`VzLW4[]galL>9Gj92
-Z36 V=2D@fBU=Ml^[Kbf^MEMbS3
-R3
-Z37 w1554944594
+!s100 8N>?Y1NYU=3bU<1D1Lamo1
+IPgU`kzgL@^RCm]=jj7`NU0
+Z35 V=2D@fBU=Ml^[Kbf^MEMbS3
+R31
+Z36 w1555004895
 R17
 R18
-L0 69
+L0 65
 R7
 r1
 !s85 0
 31
-Z38 !s108 1554944598.543000
-Z39 !s107 multiplexador.vt|
+Z37 !s108 1555004901.615000
+Z38 !s107 multiplexador.vt|
 R21
 !s101 -O0
 R9
 vmultiplexador_vlg_sample_tst
 !i10b 1
-Z40 !s100 RjTkbomjiGehQ@U2gX[MO3
-Z41 Ie]0PE8;e`7G5_6cjP1>2Q3
-Z42 Vl]_iHFm^Fb;Fik17CEQ2_2
-R3
-R37
+!s100 NVVQH8[TM:Vzi<8heoek`0
+I_[Hf@k9Q;72:18mV8OmCn2
+V1fRIIl[`I8lhHeNF;4=4R1
+R31
+R36
 R17
 R18
 L0 29
@@ -131,27 +131,27 @@ R7
 r1
 !s85 0
 31
+R37
 R38
-R39
 R21
 !s101 -O0
 R9
 vmultiplexador_vlg_vec_tst
 !i10b 1
-Z43 !s100 RmKn^`D[1O^34>NgIRzeo0
-Z44 I_Q`J9^oPI>V<R6zi>5^O50
-Z45 VW0?z^n0nDYkc7?1?=:8Ui1
-R3
-R37
+!s100 ?HQQXoVY0B`7JVC^S;R3N3
+I1?HV4V@hc`SGMzhF<LmU<0
+Z39 VW0?z^n0nDYkc7?1?=:8Ui1
+R31
+R36
 R17
 R18
-Z46 L0 164
+L0 160
 R7
 r1
 !s85 0
 31
+R37
 R38
-R39
 R21
 !s101 -O0
 R9

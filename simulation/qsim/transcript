@@ -25,5 +25,5 @@
 # Loading work.multiplexador_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : multiplexador.vt(160)
+# ** Note: $finish    : multiplexador.vt(156)
 #    Time: 1 us  Iteration: 0  Instance: /multiplexador_vlg_vec_tst/tb_out
