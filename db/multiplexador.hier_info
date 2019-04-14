@@ -1,66 +1,70 @@
 |multiplexador
-x0[0] => tratamentoSubtracao:diferenca.x0[0]
-x0[0] => soma:total.A[0]
-x0[0] => maiorque:maior.A[0]
-x0[0] => menorque:menor.A[0]
-x0[1] => tratamentoSubtracao:diferenca.x0[1]
-x0[1] => soma:total.A[1]
-x0[1] => maiorque:maior.A[1]
-x0[1] => menorque:menor.A[1]
-x0[2] => tratamentoSubtracao:diferenca.x0[2]
-x0[2] => soma:total.A[2]
-x0[2] => maiorque:maior.A[2]
-x0[2] => menorque:menor.A[2]
-x0[3] => tratamentoSubtracao:diferenca.x0[3]
-x0[3] => soma:total.A[3]
-x0[3] => maiorque:maior.A[3]
-x0[3] => menorque:menor.A[3]
-x1[0] => tratamentoSubtracao:diferenca.x1[0]
-x1[0] => soma:total.B[0]
-x1[0] => maiorque:maior.B[0]
-x1[0] => menorque:menor.B[0]
-x1[0] => inversor:invertido.A[0]
-x1[1] => tratamentoSubtracao:diferenca.x1[1]
-x1[1] => soma:total.B[1]
-x1[1] => maiorque:maior.B[1]
-x1[1] => menorque:menor.B[1]
-x1[1] => inversor:invertido.A[1]
-x1[2] => tratamentoSubtracao:diferenca.x1[2]
-x1[2] => soma:total.B[2]
-x1[2] => maiorque:maior.B[2]
-x1[2] => menorque:menor.B[2]
-x1[2] => inversor:invertido.A[2]
-x1[3] => tratamentoSubtracao:diferenca.x1[3]
-x1[3] => soma:total.B[3]
-x1[3] => maiorque:maior.B[3]
-x1[3] => menorque:menor.B[3]
-x1[3] => inversor:invertido.A[3]
+x0[0] => tratamentoSubtracao:Diferenca.x0[0]
+x0[0] => soma:Total.A[0]
+x0[0] => maiorque:Maior.A[0]
+x0[0] => menorque:Menor.A[0]
+x0[1] => tratamentoSubtracao:Diferenca.x0[1]
+x0[1] => soma:Total.A[1]
+x0[1] => maiorque:Maior.A[1]
+x0[1] => menorque:Menor.A[1]
+x0[2] => tratamentoSubtracao:Diferenca.x0[2]
+x0[2] => soma:Total.A[2]
+x0[2] => maiorque:Maior.A[2]
+x0[2] => menorque:Menor.A[2]
+x0[3] => tratamentoSubtracao:Diferenca.x0[3]
+x0[3] => soma:Total.A[3]
+x0[3] => maiorque:Maior.A[3]
+x0[3] => menorque:Menor.A[3]
+x1[0] => tratamentoSubtracao:Diferenca.x1[0]
+x1[0] => soma:Total.B[0]
+x1[0] => maiorque:Maior.B[0]
+x1[0] => menorque:Menor.B[0]
+x1[0] => inversor:Invertido.A[0]
+x1[1] => tratamentoSubtracao:Diferenca.x1[1]
+x1[1] => soma:Total.B[1]
+x1[1] => maiorque:Maior.B[1]
+x1[1] => menorque:Menor.B[1]
+x1[1] => inversor:Invertido.A[1]
+x1[2] => tratamentoSubtracao:Diferenca.x1[2]
+x1[2] => soma:Total.B[2]
+x1[2] => maiorque:Maior.B[2]
+x1[2] => menorque:Menor.B[2]
+x1[2] => inversor:Invertido.A[2]
+x1[3] => tratamentoSubtracao:Diferenca.x1[3]
+x1[3] => soma:Total.B[3]
+x1[3] => maiorque:Maior.B[3]
+x1[3] => menorque:Menor.B[3]
+x1[3] => inversor:Invertido.A[3]
 S[0] => Mux0.IN7
 S[0] => Mux1.IN7
 S[0] => Mux2.IN7
 S[0] => Mux3.IN5
+S[0] => Mux4.IN7
 S[1] => Mux0.IN6
 S[1] => Mux1.IN6
 S[1] => Mux2.IN6
 S[1] => Mux3.IN4
+S[1] => Mux4.IN6
 S[2] => Mux0.IN5
 S[2] => Mux1.IN5
 S[2] => Mux2.IN5
 S[2] => Mux3.IN3
+S[2] => Mux4.IN5
 ctrl[0] => ~NO_FANOUT~
 ctrl[1] => ~NO_FANOUT~
-y[0] <= conversor:converte.Y[0]
-y[1] <= conversor:converte.Y[1]
-y[2] <= conversor:converte.Y[2]
-y[3] <= conversor:converte.Y[3]
-y[4] <= conversor:converte.Y[4]
-y[5] <= conversor:converte.Y[5]
-y[6] <= conversor:converte.Y[6]
-desliga => conversor:converte.ctrl[1]
+y[0] <= conversor:Converte.Y[0]
+y[1] <= conversor:Converte.Y[1]
+y[2] <= conversor:Converte.Y[2]
+y[3] <= conversor:Converte.Y[3]
+y[4] <= conversor:Converte.Y[4]
+y[5] <= conversor:Converte.Y[5]
+y[6] <= conversor:Converte.Y[6]
+desliga => conversor:Converte.ctrl[1]
 desliga => controle[0].IN1
+CoLed <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|tratamentoSubtracao:diferenca
+|multiplexador|tratamentoSubtracao:Diferenca
 x0[0] => menorque:menor.A[0]
 x0[0] => subtracao:subt.x0[0]
 x0[1] => menorque:menor.A[1]
@@ -84,7 +88,7 @@ y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 c <= menorque:menor.y
 
 
-|multiplexador|tratamentoSubtracao:diferenca|menorque:menor
+|multiplexador|tratamentoSubtracao:Diferenca|menorque:menor
 A[0] => y.IN0
 A[1] => y.IN0
 A[1] => y.IN0
@@ -102,7 +106,7 @@ B[3] => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|tratamentoSubtracao:diferenca|subtracao:subt
+|multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt
 x0[0] => soma:Soma1.A[0]
 x0[1] => soma:Soma1.A[1]
 x0[2] => soma:Soma1.A[2]
@@ -117,7 +121,7 @@ Y[2] <= soma:soma2.S[2]
 Y[3] <= soma:soma2.S[3]
 
 
-|multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|inversor:invertido
+|multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|inversor:invertido
 A[0] => y[0].DATAIN
 A[1] => y[1].DATAIN
 A[2] => y[2].DATAIN
@@ -128,7 +132,7 @@ y[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:Soma1
+|multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1
 A[0] => somador:S0.A
 A[1] => somador:S1.A
 A[2] => somador:S2.A
@@ -144,7 +148,7 @@ S[3] <= somador:S3.S
 Co <= somador:S3.Co
 
 
-|multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:Soma1|somador:S0
+|multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1|somador:S0
 Ci => S.IN1
 Ci => Co.IN1
 A => Co.IN0
@@ -155,7 +159,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:Soma1|somador:S1
+|multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1|somador:S1
 Ci => S.IN1
 Ci => Co.IN1
 A => Co.IN0
@@ -166,7 +170,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:Soma1|somador:S2
+|multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1|somador:S2
 Ci => S.IN1
 Ci => Co.IN1
 A => Co.IN0
@@ -177,7 +181,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:Soma1|somador:S3
+|multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1|somador:S3
 Ci => S.IN1
 Ci => Co.IN1
 A => Co.IN0
@@ -188,7 +192,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:soma2
+|multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:soma2
 A[0] => somador:S0.A
 A[1] => somador:S1.A
 A[2] => somador:S2.A
@@ -204,7 +208,7 @@ S[3] <= somador:S3.S
 Co <= somador:S3.Co
 
 
-|multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:soma2|somador:S0
+|multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:soma2|somador:S0
 Ci => S.IN1
 Ci => Co.IN1
 A => Co.IN0
@@ -215,7 +219,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:soma2|somador:S1
+|multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:soma2|somador:S1
 Ci => S.IN1
 Ci => Co.IN1
 A => Co.IN0
@@ -226,7 +230,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:soma2|somador:S2
+|multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:soma2|somador:S2
 Ci => S.IN1
 Ci => Co.IN1
 A => Co.IN0
@@ -237,7 +241,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:soma2|somador:S3
+|multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:soma2|somador:S3
 Ci => S.IN1
 Ci => Co.IN1
 A => Co.IN0
@@ -248,7 +252,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|soma:total
+|multiplexador|soma:Total
 A[0] => somador:S0.A
 A[1] => somador:S1.A
 A[2] => somador:S2.A
@@ -264,7 +268,7 @@ S[3] <= somador:S3.S
 Co <= somador:S3.Co
 
 
-|multiplexador|soma:total|somador:S0
+|multiplexador|soma:Total|somador:S0
 Ci => S.IN1
 Ci => Co.IN1
 A => Co.IN0
@@ -275,7 +279,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|soma:total|somador:S1
+|multiplexador|soma:Total|somador:S1
 Ci => S.IN1
 Ci => Co.IN1
 A => Co.IN0
@@ -286,7 +290,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|soma:total|somador:S2
+|multiplexador|soma:Total|somador:S2
 Ci => S.IN1
 Ci => Co.IN1
 A => Co.IN0
@@ -297,7 +301,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|soma:total|somador:S3
+|multiplexador|soma:Total|somador:S3
 Ci => S.IN1
 Ci => Co.IN1
 A => Co.IN0
@@ -308,7 +312,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|maiorque:maior
+|multiplexador|maiorque:Maior
 A[0] => y.IN0
 A[1] => y.IN0
 A[1] => y.IN0
@@ -326,7 +330,7 @@ B[3] => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|menorque:menor
+|multiplexador|menorque:Menor
 A[0] => y.IN0
 A[1] => y.IN0
 A[1] => y.IN0
@@ -344,7 +348,7 @@ B[3] => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|inversor:invertido
+|multiplexador|inversor:Invertido
 A[0] => y[0].DATAIN
 A[1] => y[1].DATAIN
 A[2] => y[2].DATAIN
@@ -355,7 +359,7 @@ y[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|multiplexador|conversor:converte
+|multiplexador|conversor:Converte
 I[0] => Mux0.IN19
 I[0] => Mux1.IN19
 I[0] => Mux2.IN19

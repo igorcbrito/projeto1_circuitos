@@ -1,5 +1,5 @@
 Analysis & Synthesis report for multiplexador
-Sat Apr 13 14:09:29 2019
+Sun Apr 14 12:54:52 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -15,12 +15,11 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "soma:total"
- 11. Port Connectivity Checks: "tratamentoSubtracao:diferenca|subtracao:subt|soma:soma2"
- 12. Port Connectivity Checks: "tratamentoSubtracao:diferenca|subtracao:subt|soma:Soma1|somador:S0"
- 13. Port Connectivity Checks: "tratamentoSubtracao:diferenca|subtracao:subt|soma:Soma1"
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+ 10. Port Connectivity Checks: "tratamentoSubtracao:Diferenca|subtracao:subt|soma:soma2"
+ 11. Port Connectivity Checks: "tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1|somador:S0"
+ 12. Port Connectivity Checks: "tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1"
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -46,16 +45,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 13 14:09:29 2019      ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 14 12:54:52 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; multiplexador                              ;
 ; Top-level Entity Name              ; multiplexador                              ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 43                                         ;
-;     Total combinational functions  ; 43                                         ;
+; Total logic elements               ; 49                                         ;
+;     Total combinational functions  ; 49                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 21                                         ;
+; Total pins                         ; 22                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -176,34 +175,34 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                    ;
-+---------------------------------------------+--------------------------------------------------+
-; Resource                                    ; Usage                                            ;
-+---------------------------------------------+--------------------------------------------------+
-; Estimated Total logic elements              ; 43                                               ;
-;                                             ;                                                  ;
-; Total combinational functions               ; 43                                               ;
-; Logic element usage by number of LUT inputs ;                                                  ;
-;     -- 4 input functions                    ; 30                                               ;
-;     -- 3 input functions                    ; 11                                               ;
-;     -- <=2 input functions                  ; 2                                                ;
-;                                             ;                                                  ;
-; Logic elements by mode                      ;                                                  ;
-;     -- normal mode                          ; 43                                               ;
-;     -- arithmetic mode                      ; 0                                                ;
-;                                             ;                                                  ;
-; Total registers                             ; 0                                                ;
-;     -- Dedicated logic registers            ; 0                                                ;
-;     -- I/O registers                        ; 0                                                ;
-;                                             ;                                                  ;
-; I/O pins                                    ; 21                                               ;
-; Embedded Multiplier 9-bit elements          ; 0                                                ;
-; Maximum fan-out node                        ; tratamentoSubtracao:diferenca|menorque:menor|y~4 ;
-; Maximum fan-out                             ; 9                                                ;
-; Total fan-out                               ; 164                                              ;
-; Average fan-out                             ; 2.56                                             ;
-+---------------------------------------------+--------------------------------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 49    ;
+;                                             ;       ;
+; Total combinational functions               ; 49    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 31    ;
+;     -- 3 input functions                    ; 10    ;
+;     -- <=2 input functions                  ; 8     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 49    ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 22    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; x1[2] ;
+; Maximum fan-out                             ; 9     ;
+; Total fan-out                               ; 178   ;
+; Average fan-out                             ; 2.51  ;
++---------------------------------------------+-------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,19 +210,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Library Name ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+--------------+
-; |multiplexador                     ; 43 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |multiplexador                                                                    ;              ;
-;    |conversor:converte|            ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|conversor:converte                                                 ;              ;
-;    |maiorque:maior|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|maiorque:maior                                                     ;              ;
-;    |soma:total|                    ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|soma:total                                                         ;              ;
-;       |somador:S1|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|soma:total|somador:S1                                              ;              ;
-;       |somador:S3|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|soma:total|somador:S3                                              ;              ;
-;    |tratamentoSubtracao:diferenca| ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:diferenca                                      ;              ;
-;       |menorque:menor|             ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:diferenca|menorque:menor                       ;              ;
-;       |subtracao:subt|             ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:diferenca|subtracao:subt                       ;              ;
-;          |soma:soma2|              ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:soma2            ;              ;
-;             |somador:S1|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:soma2|somador:S1 ;              ;
-;             |somador:S2|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:soma2|somador:S2 ;              ;
-;             |somador:S3|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:diferenca|subtracao:subt|soma:soma2|somador:S3 ;              ;
+; |multiplexador                     ; 49 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |multiplexador                                                                    ;              ;
+;    |conversor:Converte|            ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|conversor:Converte                                                 ;              ;
+;    |soma:Total|                    ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|soma:Total                                                         ;              ;
+;       |somador:S1|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|soma:Total|somador:S1                                              ;              ;
+;       |somador:S3|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|soma:Total|somador:S3                                              ;              ;
+;    |tratamentoSubtracao:Diferenca| ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:Diferenca                                      ;              ;
+;       |menorque:menor|             ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:Diferenca|menorque:menor                       ;              ;
+;       |subtracao:subt|             ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt                       ;              ;
+;          |soma:Soma1|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1            ;              ;
+;             |somador:S1|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1|somador:S1 ;              ;
+;          |soma:soma2|              ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:soma2            ;              ;
+;             |somador:S1|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:soma2|somador:S1 ;              ;
+;             |somador:S3|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|tratamentoSubtracao:Diferenca|subtracao:subt|soma:soma2|somador:S3 ;              ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -252,17 +251,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "soma:total"                                                                         ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; co   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "tratamentoSubtracao:diferenca|subtracao:subt|soma:soma2"                               ;
+; Port Connectivity Checks: "tratamentoSubtracao:Diferenca|subtracao:subt|soma:soma2"                               ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                             ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
@@ -273,7 +263,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "tratamentoSubtracao:diferenca|subtracao:subt|soma:Soma1|somador:S0" ;
+; Port Connectivity Checks: "tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1|somador:S0" ;
 +------+-------+----------+----------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                              ;
 +------+-------+----------+----------------------------------------------------------------------+
@@ -282,7 +272,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "tratamentoSubtracao:diferenca|subtracao:subt|soma:Soma1"                            ;
+; Port Connectivity Checks: "tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1"                            ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -305,7 +295,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sat Apr 13 14:09:25 2019
+    Info: Processing started: Sun Apr 14 12:54:48 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multiplexador -c multiplexador
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file multiplexador.vhd
@@ -336,28 +326,28 @@ Info (12021): Found 2 design units, including 1 entities, in source file subtrac
     Info (12022): Found design unit 1: subtracao-archSubtracao
     Info (12023): Found entity 1: subtracao
 Info (12127): Elaborating entity "multiplexador" for the top level hierarchy
-Warning (10873): Using initial value X (don't care) for net "yMaior[3..1]" at multiplexador.vhd(64)
-Warning (10873): Using initial value X (don't care) for net "yMenor[3..1]" at multiplexador.vhd(64)
-Info (12128): Elaborating entity "tratamentoSubtracao" for hierarchy "tratamentoSubtracao:diferenca"
-Info (12128): Elaborating entity "menorque" for hierarchy "tratamentoSubtracao:diferenca|menorque:menor"
-Info (12128): Elaborating entity "subtracao" for hierarchy "tratamentoSubtracao:diferenca|subtracao:subt"
-Info (12128): Elaborating entity "inversor" for hierarchy "tratamentoSubtracao:diferenca|subtracao:subt|inversor:invertido"
-Info (12128): Elaborating entity "soma" for hierarchy "tratamentoSubtracao:diferenca|subtracao:subt|soma:Soma1"
-Info (12128): Elaborating entity "somador" for hierarchy "tratamentoSubtracao:diferenca|subtracao:subt|soma:Soma1|somador:S0"
-Info (12128): Elaborating entity "maiorque" for hierarchy "maiorque:maior"
-Info (12128): Elaborating entity "conversor" for hierarchy "conversor:converte"
+Warning (10873): Using initial value X (don't care) for net "yMaior[3..1]" at multiplexador.vhd(63)
+Warning (10873): Using initial value X (don't care) for net "yMenor[3..1]" at multiplexador.vhd(63)
+Info (12128): Elaborating entity "tratamentoSubtracao" for hierarchy "tratamentoSubtracao:Diferenca"
+Info (12128): Elaborating entity "menorque" for hierarchy "tratamentoSubtracao:Diferenca|menorque:menor"
+Info (12128): Elaborating entity "subtracao" for hierarchy "tratamentoSubtracao:Diferenca|subtracao:subt"
+Info (12128): Elaborating entity "inversor" for hierarchy "tratamentoSubtracao:Diferenca|subtracao:subt|inversor:invertido"
+Info (12128): Elaborating entity "soma" for hierarchy "tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1"
+Info (12128): Elaborating entity "somador" for hierarchy "tratamentoSubtracao:Diferenca|subtracao:subt|soma:Soma1|somador:S0"
+Info (12128): Elaborating entity "maiorque" for hierarchy "maiorque:Maior"
+Info (12128): Elaborating entity "conversor" for hierarchy "conversor:Converte"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ctrl[0]"
     Warning (15610): No output dependent on input pin "ctrl[1]"
-Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 71 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 43 logic cells
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 49 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4659 megabytes
-    Info: Processing ended: Sat Apr 13 14:09:29 2019
+    Info: Processing ended: Sun Apr 14 12:54:52 2019
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
