@@ -37,7 +37,7 @@ begin
 	WITH ctrl SELECT -- Recebe os valores do seletor de controle
 		Y <=  Yconversor 		 WHEN "00", 	-- Quando o seletor de controle receber 00, nada será alterado e será exibido a saída do multiplexador
 				not("1101111")	 WHEN "01", 	-- Quando o seletor de controle receber 01, será exibido um erro no display
-				"0000000"	 	 WHEN "10", 	-- Quando o seletor de controle receber 10, ou seja, botão de desligar ativido, nada será exibido no display
-				"0000000"		 WHEN OTHERS;	-- Para outras combinações, nada será exibido no display
+				not("0000000")	 WHEN "10", 	-- Quando o seletor de controle receber 10, ou seja, botão de desligar ativido, nada será exibido no display
+				not("0000000")	 WHEN OTHERS;	-- Para outras combinações, nada será exibido no display
 				
 end archConversor;

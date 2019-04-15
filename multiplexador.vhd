@@ -70,7 +70,7 @@ Diferenca	: tratamentoSubtracao port map(x0,x1, ySubtracao, erro);
 Total 		: soma port map(x0, x1, ySoma, Carry_Soma);
 Maior 		: maiorque port map(x0, x1, yMaior(0));
 Menor 		: menorque port map(x0, x1, yMenor(0));
-Invertido	: inversor port map(x1, yInvertido);
+Invertido	: inversor port map(x0, yInvertido);
 Converte 	: conversor port map(yResultado, y, controle);
 
 -- Selecionando a operação a ser exibida --
@@ -83,8 +83,8 @@ Converte 	: conversor port map(yResultado, y, controle);
 							"0000"     WHEN OTHERS; -- Quando a combinação de seletores resultar em algo diferente opções anteriores nada será exibido						
 
 -- Controle do botão liga e desliga e exibição do erro no display	
-	controle(0) <= erro and not(desliga);
-	controle(1) <= desliga;
+	controle(0) <= erro and desliga;
+	controle(1) <= not(desliga);
 
 -- Controle para o acendimento do Led	
 	WITH S SELECT
@@ -92,5 +92,4 @@ Converte 	: conversor port map(yResultado, y, controle);
 					yMaior(0)  WHEN "010",	 -- Quando a combinação de seletores resultar em 010, o Led acenderá caso a entrada A for maior que a entrada B
 					yMenor(0)  WHEN "011",	 -- Quando a combinação de seletores resultar em 010, o Led acenderá caso a entrada A for menor que a entrada B
 					'0'		  WHEN OTHERS;  -- Quando a combinação de seletores resultar em algo diferente, o Led seguirá apagado.
-		
 end seletor;
