@@ -1,5 +1,5 @@
 Flow report for multiplexador
-Mon Apr 15 15:43:44 2019
+Mon Apr 15 18:49:00 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 15 15:43:44 2019      ;
+; Flow Status                        ; Successful - Mon Apr 15 18:49:00 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; multiplexador                              ;
 ; Top-level Entity Name              ; multiplexador                              ;
@@ -51,7 +51,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 48 / 33,216 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                         ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 26 / 475 ( 5 % )                           ;
+; Total pins                         ; 24 / 475 ( 5 % )                           ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                        ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                             ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/15/2019 15:43:20 ;
+; Start date & time ; 04/15/2019 18:48:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; multiplexador       ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 18587653897151.155535380000824 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 18587653897151.155536489411984 ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
@@ -93,12 +93,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4652 MB             ; 00:00:03                           ;
-; Fitter                    ; 00:00:10     ; 1.0                     ; 4895 MB             ; 00:00:09                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4571 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4556 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4657 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:10     ; 1.0                     ; 4899 MB             ; 00:00:09                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 4571 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 4556 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4527 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:18     ; --                      ; --                  ; 00:00:17                           ;
+; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:18                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

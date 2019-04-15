@@ -1,5 +1,5 @@
 Analysis & Synthesis report for multiplexador
-Mon Apr 15 15:43:23 2019
+Mon Apr 15 18:48:18 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -45,7 +45,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 15 15:43:23 2019      ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 15 18:48:18 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; multiplexador                              ;
 ; Top-level Entity Name              ; multiplexador                              ;
@@ -54,7 +54,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 48                                         ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 26                                         ;
+; Total pins                         ; 24                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -196,12 +196,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0                                                ;
 ;     -- I/O registers                        ; 0                                                ;
 ;                                             ;                                                  ;
-; I/O pins                                    ; 26                                               ;
+; I/O pins                                    ; 24                                               ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                ;
 ; Maximum fan-out node                        ; tratamentoSubtracao:Diferenca|menorque:menor|y~2 ;
 ; Maximum fan-out                             ; 10                                               ;
 ; Total fan-out                               ; 189                                              ;
-; Average fan-out                             ; 2.55                                             ;
+; Average fan-out                             ; 2.63                                             ;
 +---------------------------------------------+--------------------------------------------------+
 
 
@@ -210,7 +210,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Library Name ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+--------------+
-; |multiplexador                     ; 48 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |multiplexador                                                                    ;              ;
+; |multiplexador                     ; 48 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 24   ; 0            ; |multiplexador                                                                    ;              ;
 ;    |conversor:Converte|            ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|conversor:Converte                                                 ;              ;
 ;    |soma:Total|                    ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|soma:Total                                                         ;              ;
 ;       |somador:S1|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multiplexador|soma:Total|somador:S1                                              ;              ;
@@ -299,7 +299,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Mon Apr 15 15:43:19 2019
+    Info: Processing started: Mon Apr 15 18:48:13 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multiplexador -c multiplexador
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file multiplexador.vhd
@@ -330,8 +330,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file subtrac
     Info (12022): Found design unit 1: subtracao-archSubtracao
     Info (12023): Found entity 1: subtracao
 Info (12127): Elaborating entity "multiplexador" for the top level hierarchy
-Warning (10873): Using initial value X (don't care) for net "yMaior[3..1]" at multiplexador.vhd(65)
-Warning (10873): Using initial value X (don't care) for net "yMenor[3..1]" at multiplexador.vhd(65)
+Warning (10873): Using initial value X (don't care) for net "yMaior[3..1]" at multiplexador.vhd(64)
+Warning (10873): Using initial value X (don't care) for net "yMenor[3..1]" at multiplexador.vhd(64)
 Info (12128): Elaborating entity "tratamentoSubtracao" for hierarchy "tratamentoSubtracao:Diferenca"
 Info (12128): Elaborating entity "menorque" for hierarchy "tratamentoSubtracao:Diferenca|menorque:menor"
 Info (12128): Elaborating entity "subtracao" for hierarchy "tratamentoSubtracao:Diferenca|subtracao:subt"
@@ -342,17 +342,14 @@ Info (12128): Elaborating entity "maiorque" for hierarchy "maiorque:Maior"
 Info (12128): Elaborating entity "conversor" for hierarchy "conversor:Converte"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ctrl[0]"
-    Warning (15610): No output dependent on input pin "ctrl[1]"
-Info (21057): Implemented 74 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
+Info (21057): Implemented 72 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
     Info (21059): Implemented 12 output pins
     Info (21061): Implemented 48 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4652 megabytes
-    Info: Processing ended: Mon Apr 15 15:43:23 2019
-    Info: Elapsed time: 00:00:04
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4668 megabytes
+    Info: Processing ended: Mon Apr 15 18:48:18 2019
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:03
 
 

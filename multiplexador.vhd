@@ -5,7 +5,6 @@ entity multiplexador is 										-- Declaração de entradas e saídas do multi
 	port(
 			x0,x1		: in std_logic_vector(3 downto 0);  -- Entradas de 4 bits que passam valores como parâmetros para as operações
 			SMult			: in std_logic_vector(2 downto 0);  -- Chaves seletoras para as operações
-			ctrl		: in std_logic_vector(1 downto 0);  -- Seletor para controle de caso específico
 			y			: out std_logic_vector(6 downto 0); -- Saída do multiplexador
 			desliga  : in std_logic;							-- Botão que desliga a exibição dos resultados
 			CoLed		: out std_logic;
@@ -86,7 +85,7 @@ Converte 	: conversor port map(yResultado, y, controle);
 							"0000"     WHEN OTHERS; -- Quando a combinação de seletores resultar em algo diferente opções anteriores nada será exibido						
 
 -- Controle do botão liga e desliga e exibição do erro no display	
-	controle(0) <= (erro and not(SMult(0)) and not(SMult(1)) and not(SMult(2))) and desliga;
+	controle(0) <= (erro and not(SMult(0)) and not(SMult(1)) and not(SMult(2))) and desliga; -- A lógica do controle limita a exibição do erro somente à função de subtração
 	controle(1) <= not(desliga);
 
 -- Controle para o acendimento do Led	

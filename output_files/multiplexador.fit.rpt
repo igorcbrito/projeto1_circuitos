@@ -1,5 +1,5 @@
 Fitter report for multiplexador
-Mon Apr 15 15:43:34 2019
+Mon Apr 15 18:48:30 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Mon Apr 15 15:43:34 2019      ;
+; Fitter Status                      ; Successful - Mon Apr 15 18:48:29 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; multiplexador                              ;
 ; Top-level Entity Name              ; multiplexador                              ;
@@ -70,7 +70,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 48 / 33,216 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                         ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 26 / 475 ( 5 % )                           ;
+; Total pins                         ; 24 / 475 ( 5 % )                           ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                        ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                             ;
@@ -146,8 +146,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 78 ( 0.00 % )      ;
-;     -- Achieved     ; 0 / 78 ( 0.00 % )      ;
+;     -- Requested    ; 0 / 76 ( 0.00 % )      ;
+;     -- Achieved     ; 0 / 76 ( 0.00 % )      ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -170,7 +170,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 75      ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 73      ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -207,7 +207,7 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ;                                             ;                       ;
 ; Total LABs:  partially or completely used   ; 3 / 2,076 ( < 1 % )   ;
 ; Virtual pins                                ; 0                     ;
-; I/O pins                                    ; 26 / 475 ( 5 % )      ;
+; I/O pins                                    ; 24 / 475 ( 5 % )      ;
 ;     -- Clock pins                           ; 4 / 8 ( 50 % )        ;
 ;                                             ;                       ;
 ; Global signals                              ; 0                     ;
@@ -225,7 +225,7 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; Maximum fan-out                             ; 10                    ;
 ; Highest non-global fan-out                  ; 10                    ;
 ; Total fan-out                               ; 189                   ;
-; Average fan-out                             ; 2.45                  ;
+; Average fan-out                             ; 2.52                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -259,7 +259,7 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; Total LABs:  partially or completely used   ; 3 / 2076 ( < 1 % )   ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 26                   ; 0                              ;
+; I/O pins                                    ; 24                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 70 ( 0 % )       ; 0 / 70 ( 0 % )                 ;
 ; Total memory bits                           ; 0                    ; 0                              ;
 ; Total RAM block bits                        ; 0                    ; 0                              ;
@@ -279,7 +279,7 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ;     -- hard_block:auto_generated_inst       ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Partition Interface                         ;                      ;                                ;
-;     -- Input Ports                          ; 14                   ; 0                              ;
+;     -- Input Ports                          ; 12                   ; 0                              ;
 ;     -- Output Ports                         ; 12                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
@@ -307,8 +307,6 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; SMult[0] ; N25   ; 5        ; 65           ; 19           ; 0           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SMult[1] ; N26   ; 5        ; 65           ; 19           ; 1           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SMult[2] ; P25   ; 6        ; 65           ; 19           ; 2           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; ctrl[0]  ; AC10  ; 8        ; 20           ; 0            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; ctrl[1]  ; F20   ; 5        ; 65           ; 34           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
 ; desliga  ; G26   ; 5        ; 65           ; 27           ; 1           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; x0[0]    ; U3    ; 1        ; 0            ; 12           ; 0           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; x0[1]    ; U4    ; 1        ; 0            ; 12           ; 1           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
@@ -327,10 +325,10 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; Name         ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
 +--------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 ; CoLed        ; AD12  ; 8        ; 31           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; ySoma_aux[0] ; V11   ; 8        ; 29           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; ySoma_aux[1] ; AA12  ; 8        ; 29           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; ySoma_aux[2] ; U12   ; 8        ; 29           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; ySoma_aux[3] ; Y12   ; 8        ; 29           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; ySoma_aux[0] ; AD10  ; 8        ; 22           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; ySoma_aux[1] ; AF9   ; 8        ; 22           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; ySoma_aux[2] ; AC11  ; 8        ; 22           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; ySoma_aux[3] ; AE10  ; 8        ; 24           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 ; y[0]         ; V13   ; 8        ; 27           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; y[1]         ; V14   ; 8        ; 27           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; y[2]         ; AE11  ; 8        ; 27           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
@@ -350,10 +348,10 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; 2        ; 3 / 59 ( 5 % )   ; 3.3V          ; --           ;
 ; 3        ; 0 / 56 ( 0 % )   ; 3.3V          ; --           ;
 ; 4        ; 0 / 58 ( 0 % )   ; 3.3V          ; --           ;
-; 5        ; 4 / 65 ( 6 % )   ; 3.3V          ; --           ;
+; 5        ; 3 / 65 ( 5 % )   ; 3.3V          ; --           ;
 ; 6        ; 2 / 59 ( 3 % )   ; 3.3V          ; --           ;
 ; 7        ; 0 / 58 ( 0 % )   ; 3.3V          ; --           ;
-; 8        ; 13 / 56 ( 23 % ) ; 3.3V          ; --           ;
+; 8        ; 12 / 56 ( 21 % ) ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -397,7 +395,7 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; AA9      ; 152        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA10     ; 153        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA11     ; 155        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA12     ; 179        ; 8        ; ySoma_aux[1]                             ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA12     ; 179        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA13     ; 192        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA14     ; 194        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA15     ; 197        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -447,8 +445,8 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; AC7      ; 143        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AC8      ; 148        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC9      ; 163        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AC10     ; 164        ; 8        ; ctrl[0]                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AC11     ; 168        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC10     ; 164        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC11     ; 168        ; 8        ; ySoma_aux[2]                             ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AC12     ; 172        ; 8        ; y[4]                                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AC13     ; 185        ; 8        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AC14     ; 191        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -473,7 +471,7 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; AD7      ; 140        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD8      ; 149        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD9      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AD10     ; 167        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AD10     ; 167        ; 8        ; ySoma_aux[0]                             ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AD11     ; 173        ; 8        ; y[3]                                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AD12     ; 181        ; 8        ; CoLed                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AD13     ; 186        ; 8        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -499,7 +497,7 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; AE7      ; 157        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE8      ; 159        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE9      ; 165        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AE10     ; 169        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AE10     ; 169        ; 8        ; ySoma_aux[3]                             ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AE11     ; 174        ; 8        ; y[2]                                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AE12     ; 182        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE13     ; 183        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -523,7 +521,7 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; AF6      ; 151        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF7      ; 158        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF8      ; 160        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AF9      ; 166        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AF9      ; 166        ; 8        ; ySoma_aux[1]                             ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AF10     ; 170        ; 8        ; y[6]                                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AF11     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AF12     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -663,7 +661,7 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; F17      ; 401        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F18      ; 398        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F19      ;            ;          ; GNDA_PLL2                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; F20      ; 372        ; 5        ; ctrl[1]                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F20      ; 372        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F21      ; 371        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F22      ;            ; 5        ; VCCIO5                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; F23      ; 353        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -941,7 +939,7 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; U9       ; 86         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U10      ; 87         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U11      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; U12      ; 178        ; 8        ; ySoma_aux[2]                             ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; U12      ; 178        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; U13      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; U14      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; U15      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -966,7 +964,7 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; V8       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; V9       ; 142        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V10      ; 141        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; V11      ; 177        ; 8        ; ySoma_aux[0]                             ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; V11      ; 177        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; V12      ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; V13      ; 176        ; 8        ; y[0]                                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; V14      ; 175        ; 8        ; y[1]                                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -1019,7 +1017,7 @@ The pin-out file can be found in C:/Users/igorc/Documents/GitHub/projeto1_circui
 ; Y9       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y10      ; 146        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y11      ; 156        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y12      ; 180        ; 8        ; ySoma_aux[3]                             ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; Y12      ; 180        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y13      ; 193        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y14      ; 195        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y15      ; 196        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1080,7 +1078,7 @@ Note: User assignments will override these defaults. The user specified values a
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node         ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                               ; Library Name ;
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------+--------------+
-; |multiplexador                     ; 48 (20)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 26   ; 0            ; 48 (20)      ; 0 (0)             ; 0 (0)            ; |multiplexador                                                                    ;              ;
+; |multiplexador                     ; 48 (20)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 24   ; 0            ; 48 (20)      ; 0 (0)             ; 0 (0)            ; |multiplexador                                                                    ;              ;
 ;    |conversor:Converte|            ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; |multiplexador|conversor:Converte                                                 ;              ;
 ;    |soma:Total|                    ; 4 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; |multiplexador|soma:Total                                                         ;              ;
 ;       |somador:S1|                 ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |multiplexador|soma:Total|somador:S1                                              ;              ;
@@ -1105,8 +1103,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+----------+---------------+---------------+-----------------------+-----+
 ; Name         ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
 +--------------+----------+---------------+---------------+-----------------------+-----+
-; ctrl[0]      ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; ctrl[1]      ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; y[0]         ; Output   ; --            ; --            ; --                    ; --  ;
 ; y[1]         ; Output   ; --            ; --            ; --                    ; --  ;
 ; y[2]         ; Output   ; --            ; --            ; --                    ; --  ;
@@ -1139,8 +1135,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                                                            ; Pad To Core Index ; Setting ;
 +--------------------------------------------------------------------------------+-------------------+---------+
-; ctrl[0]                                                                        ;                   ;         ;
-; ctrl[1]                                                                        ;                   ;         ;
 ; desliga                                                                        ;                   ;         ;
 ;      - conversor:Converte|Mux13~0                                              ; 1                 ; 6       ;
 ;      - conversor:Converte|Mux12~1                                              ; 1                 ; 6       ;
@@ -1270,14 +1264,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-----------------------+
 ; Other Routing Resource Type ; Usage                 ;
 +-----------------------------+-----------------------+
-; Block interconnects         ; 56 / 94,460 ( < 1 % ) ;
-; C16 interconnects           ; 13 / 3,315 ( < 1 % )  ;
-; C4 interconnects            ; 27 / 60,840 ( < 1 % ) ;
-; Direct links                ; 19 / 94,460 ( < 1 % ) ;
+; Block interconnects         ; 49 / 94,460 ( < 1 % ) ;
+; C16 interconnects           ; 11 / 3,315 ( < 1 % )  ;
+; C4 interconnects            ; 31 / 60,840 ( < 1 % ) ;
+; Direct links                ; 12 / 94,460 ( < 1 % ) ;
 ; Global clocks               ; 0 / 16 ( 0 % )        ;
-; Local interconnects         ; 22 / 33,216 ( < 1 % ) ;
-; R24 interconnects           ; 23 / 3,091 ( < 1 % )  ;
-; R4 interconnects            ; 20 / 81,294 ( < 1 % ) ;
+; Local interconnects         ; 27 / 33,216 ( < 1 % ) ;
+; R24 interconnects           ; 21 / 3,091 ( < 1 % )  ;
+; R4 interconnects            ; 19 / 81,294 ( < 1 % ) ;
 +-----------------------------+-----------------------+
 
 
@@ -1415,9 +1409,7 @@ Info (169124): Fitter converted 3 user pins into dedicated programming pins
     Info (169125): Pin ~ASDO~ is reserved at location E3
     Info (169125): Pin ~nCSO~ is reserved at location D3
     Info (169125): Pin ~LVDS150p/nCEO~ is reserved at location AE24
-Critical Warning (169085): No exact pin location assignment(s) for 6 pins of 26 total pins
-    Info (169086): Pin ctrl[0] not assigned to an exact location on the device
-    Info (169086): Pin ctrl[1] not assigned to an exact location on the device
+Critical Warning (169085): No exact pin location assignment(s) for 4 pins of 24 total pins
     Info (169086): Pin ySoma_aux[0] not assigned to an exact location on the device
     Info (169086): Pin ySoma_aux[1] not assigned to an exact location on the device
     Info (169086): Pin ySoma_aux[2] not assigned to an exact location on the device
@@ -1431,7 +1423,7 @@ Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 6 (unused VREF, 3.3V VCCIO, 2 input, 4 output, 0 bidirectional)
+    Info (176211): Number of I/O pins in group: 4 (unused VREF, 3.3V VCCIO, 0 input, 4 output, 0 bidirectional)
         Info (176212): I/O standards used: 3.3-V LVTTL.
 Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
@@ -1456,7 +1448,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.22 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 12 output pins without output pin load capacitance assignment
     Info (306007): Pin "y[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1478,9 +1470,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/igorc/Documents/GitHub/projeto1_circuitos/output_files/multiplexador.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4895 megabytes
-    Info: Processing ended: Mon Apr 15 15:43:34 2019
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 4899 megabytes
+    Info: Processing ended: Mon Apr 15 18:48:35 2019
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:10
 
 
