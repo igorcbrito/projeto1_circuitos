@@ -4,11 +4,13 @@ use ieee.std_logic_1164.all;
 entity multiplexador is 										-- Declaração de entradas e saídas do multiplexador
 	port(
 			x0,x1		: in std_logic_vector(3 downto 0);  -- Entradas de 4 bits que passam valores como parâmetros para as operações
-			S			: in std_logic_vector(2 downto 0);  -- Chaves seletoras para as operações
+			SMult			: in std_logic_vector(2 downto 0);  -- Chaves seletoras para as operações
 			ctrl		: in std_logic_vector(1 downto 0);  -- Seletor para controle de caso específico
 			y			: out std_logic_vector(6 downto 0); -- Saída do multiplexador
 			desliga  : in std_logic;							-- Botão que desliga a exibição dos resultados
-			CoLed		: out std_logic							-- Saída do Led que indica quando foi usado um Carry na adição ou as operações de "maior que" e "menor que" retornam verdadeiro
+			CoLed		: out std_logic;
+			ySoma_aux: out std_logic_vector(3 downto 0)
+			-- Saída do Led que indica quando foi usado um Carry na adição ou as operações de "maior que" e "menor que" retornam verdadeiro
 		);
 end multiplexador;
 
@@ -74,7 +76,8 @@ Invertido	: inversor port map(x0, yInvertido);
 Converte 	: conversor port map(yResultado, y, controle);
 
 -- Selecionando a operação a ser exibida --
-	WITH S SELECT
+	ySoma_aux <= ysoma;
+	WITH SMult SELECT
 		yResultado <=  ySubtracao WHEN "000",	-- Quando a combinação de seletores resultar em 000, a subtração será exibida
 							ySoma      WHEN "001",	-- Quando a combinação de seletores resultar em 001, a soma será exibida
 							yMaior     WHEN "010", 	-- Quando a combinação de seletores resultar em 010, o retorno será 1 se A for maior que B, 0 caso contrário
@@ -83,11 +86,11 @@ Converte 	: conversor port map(yResultado, y, controle);
 							"0000"     WHEN OTHERS; -- Quando a combinação de seletores resultar em algo diferente opções anteriores nada será exibido						
 
 -- Controle do botão liga e desliga e exibição do erro no display	
-	controle(0) <= erro and desliga;
+	controle(0) <= (erro and not(SMult(0)) and not(SMult(1)) and not(SMult(2))) and desliga;
 	controle(1) <= not(desliga);
 
 -- Controle para o acendimento do Led	
-	WITH S SELECT
+	WITH SMult SELECT
 		CoLed <= Carry_Soma WHEN "001", 	 -- Quando a combinação de seletores resultar em 001, o Led acenderá caso o carry da soma for 1
 					yMaior(0)  WHEN "010",	 -- Quando a combinação de seletores resultar em 010, o Led acenderá caso a entrada A for maior que a entrada B
 					yMenor(0)  WHEN "011",	 -- Quando a combinação de seletores resultar em 010, o Led acenderá caso a entrada A for menor que a entrada B

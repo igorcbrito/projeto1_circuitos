@@ -2,11 +2,11 @@ library verilog;
 use verilog.vl_types.all;
 entity multiplexador_vlg_sample_tst is
     port(
-        s0              : in     vl_logic;
-        s1              : in     vl_logic;
-        s2              : in     vl_logic;
-        x0              : in     vl_logic;
-        x1              : in     vl_logic;
+        ctrl            : in     vl_logic_vector(1 downto 0);
+        desliga         : in     vl_logic;
+        SMult           : in     vl_logic_vector(2 downto 0);
+        x0              : in     vl_logic_vector(3 downto 0);
+        x1              : in     vl_logic_vector(3 downto 0);
         sampler_tx      : out    vl_logic
     );
 end multiplexador_vlg_sample_tst;
