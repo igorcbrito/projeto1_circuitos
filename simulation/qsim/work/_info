@@ -80,11 +80,11 @@ R9
 !s85 0
 !s101 -O0
 vmultiplexador
-Z29 !s100 3_UR0QMJ_mj^^^0azlFXf0
-Z30 ICTGNbJ25G2d[30lQ[5?dD2
-Z31 VdjB1WRO9_mdo[HnDDfQ4S2
+Z29 !s100 LIj>UYkEWj7d2BiKn3[^31
+Z30 I?G:`;h7;OXVUz;oQno=9H0
+Z31 V;o^297zHiIGEC^f2HkWnD3
 Z32 dC:\Users\igorc\Documents\GitHub\projeto1_circuitos\simulation\qsim
-Z33 w1555352220
+Z33 w1555542844
 R5
 R6
 L0 31
@@ -93,35 +93,34 @@ r1
 31
 R8
 R9
+Z34 !s108 1555542846.195000
+R12
 !i10b 1
 !s85 0
-Z34 !s108 1555352222.411000
-R12
 !s101 -O0
 vmultiplexador_vlg_check_tst
-!i10b 1
-Z35 !s100 bLLc72jL>TELn0B87OmS^2
-Z36 If[3UP=U:4Bb2odKA_=1J>3
+Z35 !s100 e:Zf9mWiiONWKQbbNdnKY1
+Z36 I?i1@hzFXzT849=7]_X0?70
 Z37 VgCmkO29?S]8zQbZ:7d^0F0
 R32
-Z38 w1555352218
+Z38 w1555542842
 R17
 R18
-L0 65
+L0 63
 R7
 r1
-!s85 0
 31
-Z39 !s108 1555352222.888000
-Z40 !s107 multiplexador.vt|
+Z39 !s108 1555542846.547000
+R20
 R21
-!s101 -O0
 R9
-vmultiplexador_vlg_sample_tst
 !i10b 1
-Z41 !s100 jjK4ei<Ik:`7Z>DZYjk[g1
-Z42 I5SM@MlTnKg@c]aMCLLb5`2
-Z43 V5o7h[_4l:j7cDAB7Az8`I0
+!s85 0
+!s101 -O0
+vmultiplexador_vlg_sample_tst
+Z40 !s100 `VK9WdVCa6BI10EmoYaHY2
+Z41 I_0z3<XVB<eOY308=NKLBH2
+Z42 VeJE=YGWCQG@F6`W_NFa?X3
 R32
 R38
 R17
@@ -129,37 +128,39 @@ R18
 L0 29
 R7
 r1
-!s85 0
 31
 R39
-R40
+R20
 R21
-!s101 -O0
 R9
-vmultiplexador_vlg_vec_tst
 !i10b 1
-!s100 1W`O:jd9LElKgQ8klPBEb2
-IJD5V91o?:?oP1dcXCCFXY1
+!s85 0
+!s101 -O0
+vmultiplexador_vlg_vec_tst
+Z43 II[Pk[izT]610Tm3o72kdM0
 Z44 VW0?z^n0nDYkc7?1?=:8Ui1
 R32
 R38
 R17
 R18
-Z45 L0 374
+Z45 L0 243
 R7
 r1
-!s85 0
 31
 R39
-R40
+R20
 R21
-!s101 -O0
 R9
+Z46 !s100 iPobYJ@gP9lLC@U3Wo8FN0
+!i10b 1
+!s85 0
+!s101 -O0
 vsoma
-Z46 I^nmXC>^iClz>NYJWCng3>1
-Z47 VThA=b<Uz=33e?CS<K3_=22
+Z47 !s100 ;>NI4VL74X;NE0_FS^n4a2
+Z48 I^nmXC>^iClz>NYJWCng3>1
+Z49 VThA=b<Uz=33e?CS<K3_=22
 R32
-Z48 w1555348587
+Z50 w1555544473
 R5
 R6
 L0 31
@@ -168,66 +169,145 @@ r1
 31
 R8
 R9
-Z49 !s100 ;>NI4VL74X;NE0_FS^n4a2
-Z50 !s108 1555348592.950000
+!i10b 1
+!s85 0
+Z51 !s108 1555544474.904000
+R12
+!s101 -O0
+vsoma_vlg_check_tst
+!i10b 1
+!s100 5:L:X9IOEUCD>kPI;E5UF3
+II]OmQ>@X3zzeD[aTe?nLM3
+Z52 VO15cD4Ja?91RkI_49UU0F0
+R32
+Z53 w1555544472
+R17
+R18
+L0 59
+R7
+r1
+!s85 0
+31
+Z54 !s108 1555544475.245000
+Z55 !s107 multiplexador.vt|
+R21
+!s101 -O0
+R9
+vsoma_vlg_sample_tst
+!i10b 1
+Z56 !s100 FjIO[X?;nZ[C?hHY]@_Xc1
+Z57 I>]z[7Xc3LkbYZ7U9lAUGB2
+Z58 VJfROI[QhUh?cFazfhi?^:1
+R32
+R53
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R54
+R55
+R21
+!s101 -O0
+R9
+vsoma_vlg_vec_tst
+!i10b 1
+!s100 9`VJaYKz5S]=<b=lnHNIY3
+I:FgA21zGa_:YlZ_K9JI0j1
+Z59 V9HH_S`:[9?;lgjFiad3E22
+R32
+R53
+R17
+R18
+Z60 L0 234
+R7
+r1
+!s85 0
+31
+R54
+R55
+R21
+!s101 -O0
+R9
+vtratamentoSubtracao
+Z61 !s100 8PaGN7IKZZW;oSi<Qndb13
+Z62 Inn3MSB3=jNO12_1mlaafe0
+Z63 VI^P_blLYXY1Vg=m_ALMV:0
+R32
+Z64 w1555543592
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z65 ntratamento@subtracao
+Z66 !s108 1555543593.786000
 R12
 !i10b 1
 !s85 0
 !s101 -O0
-vsoma_vlg_check_tst
-Z51 I]7Aem[`Yz:n3Xc=FNU<PQ0
-Z52 VO15cD4Ja?91RkI_49UU0F0
+vtratamentoSubtracao_vlg_check_tst
+Z67 !s100 <1Q4KQ`9jaZ;d3kPbV0Z@0
+Z68 IO<[D;VhJD^QiO?_:Zf?;Z2
+Z69 VSENI1G>oEg1OPmVIMY1C`1
 R32
-Z53 w1555348585
+Z70 w1555543590
 R17
 R18
 L0 59
 R7
 r1
 31
-Z54 !s108 1555348593.574000
+Z71 !s108 1555543594.131000
 R20
 R21
 R9
-Z55 !s100 36ghQXoEoab_BoTmgj6fa2
+Z72 ntratamento@subtracao_vlg_check_tst
 !i10b 1
 !s85 0
 !s101 -O0
-vsoma_vlg_sample_tst
-Z56 I>]z[7Xc3LkbYZ7U9lAUGB2
-Z57 VJfROI[QhUh?cFazfhi?^:1
+vtratamentoSubtracao_vlg_sample_tst
+Z73 !s100 76cn]gk?]ihfOzF]2i1a22
+Z74 IQo^Fc3@EW9[BADS=zdP7C2
+Z75 VcPL@LVn[OE>6kKV>@GAGh1
 R32
-R53
+R70
 R17
 R18
 L0 29
 R7
 r1
 31
-R54
+R71
 R20
 R21
 R9
-Z58 !s100 FjIO[X?;nZ[C?hHY]@_Xc1
+Z76 ntratamento@subtracao_vlg_sample_tst
 !i10b 1
 !s85 0
 !s101 -O0
-vsoma_vlg_vec_tst
-Z59 IKPFj`IF<ACY>eL`F;QW>C3
-Z60 V9HH_S`:[9?;lgjFiad3E22
+vtratamentoSubtracao_vlg_vec_tst
+Z77 !s100 nHLIP<?Z7fKlJ0^_3o8N_1
+Z78 IOkk><E8OPadAE;EM^jMMH0
+Z79 Vm1c5F96_1=Sl=_W2OoZ_n0
 R32
-R53
+R70
 R17
 R18
-Z61 L0 234
+Z80 L0 217
 R7
 r1
 31
-R54
+R71
 R20
 R21
 R9
-Z62 !s100 ?n`]`M;9DEUKP[Mk>Q6bd3
+Z81 ntratamento@subtracao_vlg_vec_tst
 !i10b 1
 !s85 0
 !s101 -O0

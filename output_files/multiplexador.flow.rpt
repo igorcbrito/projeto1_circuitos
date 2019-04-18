@@ -1,5 +1,5 @@
 Flow report for multiplexador
-Mon Apr 15 18:49:00 2019
+Wed Apr 17 21:28:06 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 15 18:49:00 2019      ;
+; Flow Status                        ; Successful - Wed Apr 17 21:28:06 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; multiplexador                              ;
 ; Top-level Entity Name              ; multiplexador                              ;
@@ -64,28 +64,31 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/15/2019 18:48:14 ;
+; Start date & time ; 04/17/2019 21:27:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; multiplexador       ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                    ;
-+-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 18587653897151.155536489411984 ; --            ; --          ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                              ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --          ; --             ;
-+-------------------------------------+--------------------------------+---------------+-------------+----------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                            ;
++-------------------------------------+--------------------------------+---------------+---------------------+----------------+
+; Assignment Name                     ; Value                          ; Default Value ; Entity Name         ; Section Id     ;
++-------------------------------------+--------------------------------+---------------+---------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 18587653897151.155554725902736 ; --            ; --                  ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --                  ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --                  ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --                  ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --                  ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                              ; --            ; --                  ; --             ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; --                  ; Top            ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; tratamentoSubtracao ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; --                  ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; tratamentoSubtracao ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; --                  ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; tratamentoSubtracao ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --                  ; --             ;
++-------------------------------------+--------------------------------+---------------+---------------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -93,12 +96,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4657 MB             ; 00:00:03                           ;
-; Fitter                    ; 00:00:10     ; 1.0                     ; 4899 MB             ; 00:00:09                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 4571 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 4556 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4527 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:18                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4665 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:11     ; 1.0                     ; 4891 MB             ; 00:00:10                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4571 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4556 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4527 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:21     ; --                      ; --                  ; 00:00:19                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

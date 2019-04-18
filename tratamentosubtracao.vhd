@@ -3,9 +3,9 @@ use ieee.std_logic_1164.all;
 
 entity tratamentoSubtracao is -- Faz a preparação para a subtração, avalia se a subtração é possível
 	port(
-			x0, x1 	: in std_logic_vector(3 downto 0);
-			y 			: out std_logic_vector(3 downto 0);
-			c 			: out std_logic
+			x0, x1 		: in std_logic_vector(3 downto 0);
+			y 				: out std_logic_vector(3 downto 0);
+			c 				: out std_logic
 		);
 end tratamentoSubtracao;
 

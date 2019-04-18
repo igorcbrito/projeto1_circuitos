@@ -4,12 +4,11 @@ use ieee.std_logic_1164.all;
 entity multiplexador is 										-- Declaração de entradas e saídas do multiplexador
 	port(
 			x0,x1		: in std_logic_vector(3 downto 0);  -- Entradas de 4 bits que passam valores como parâmetros para as operações
-			SMult			: in std_logic_vector(2 downto 0);  -- Chaves seletoras para as operações
+			SMult		: in std_logic_vector(2 downto 0);  -- Chaves seletoras para as operações
 			y			: out std_logic_vector(6 downto 0); -- Saída do multiplexador
 			desliga  : in std_logic;							-- Botão que desliga a exibição dos resultados
-			CoLed		: out std_logic;
-			ySoma_aux: out std_logic_vector(3 downto 0)
-			-- Saída do Led que indica quando foi usado um Carry na adição ou as operações de "maior que" e "menor que" retornam verdadeiro
+			CoLed		: out std_logic;							-- Saída do Led que indica quando foi usado um Carry na adição ou as operações de "maior que" e "menor que" retornam verdadeiro
+			ySoma_aux: out std_logic_vector(3 downto 0)	-- Usado para testar a soma separadamente
 		);
 end multiplexador;
 
